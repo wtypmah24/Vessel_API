@@ -1,0 +1,6 @@
+com/example/vessel_api/entity/Vessel.class
+com/example/vessel_api/service/VesselService.class
+com/example/vessel_api/controller/VesselController.class
+com/example/vessel_api/repository/VesselRepository.class
+com/example/vessel_api/VesselApiApplication.class
+com/example/vessel_api/security/SecurityCheck.class
