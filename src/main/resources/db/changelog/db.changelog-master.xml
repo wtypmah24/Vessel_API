@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="create-table-vessel" author="${S_Taras}">
+        <createTable tableName="vessel">
+            <column name="imo_number" type="BIGINT"/>
+            <column name="name" type="text"/>
+            <column name="departure" type="text"/>
+            <column name="destination" type="text"/>
+            <column name="arrival_date" type="DATE"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="insert_vessels" author="${S_Taras}">
+        <insert tableName="vessel">
+            <column name="imo_number" value="1"/>
+            <column name="name" value="BBC Pluto"/>
+            <column name="departure" value="Hamburg"/>
+            <column name="destination" value="Bremen"/>
+            <column name="arrival_date" value="2024-06-13"/>
+        </insert>
+        <insert tableName="vessel">
+            <column name="imo_number" value="2"/>
+            <column name="name" value="Sjard"/>
+            <column name="departure" value="Hamburg"/>
+            <column name="destination" value="Bremen"/>
+            <column name="arrival_date" value="2024-06-13"/>
+        </insert>
+        <insert tableName="vessel">
+            <column name="imo_number" value="3"/>
+            <column name="name" value="Wybelsum"/>
+            <column name="departure" value="Hamburg"/>
+            <column name="destination" value="Bremen"/>
+            <column name="arrival_date" value="2024-06-13"/>
+        </insert>
+        <insert tableName="vessel">
+            <column name="imo_number" value="4"/>
+            <column name="name" value="BBC Mars"/>
+            <column name="departure" value="Hamburg"/>
+            <column name="destination" value="Bremen"/>
+            <column name="arrival_date" value="2024-06-13"/>
+        </insert>
+        <insert tableName="vessel">
+            <column name="imo_number" value="5"/>
+            <column name="name" value="BBC Amethyst"/>
+            <column name="departure" value="Hamburg"/>
+            <column name="destination" value="Bremen"/>
+            <column name="arrival_date" value="2024-06-13"/>
+        </insert>
+        <insert tableName="vessel">
+            <column name="imo_number" value="6"/>
+            <column name="name" value="BBC Austria"/>
+            <column name="departure" value="Hamburg"/>
+            <column name="destination" value="Bremen"/>
+            <column name="arrival_date" value="2024-06-13"/>
+        </insert>
+        <insert tableName="vessel">
+            <column name="imo_number" value="7"/>
+            <column name="name" value="BREB Treader"/>
+            <column name="departure" value="Hamburg"/>
+            <column name="destination" value="Bremen"/>
+            <column name="arrival_date" value="2024-06-13"/>
+        </insert>
+        <insert tableName="vessel">
+            <column name="imo_number" value="8"/>
+            <column name="name" value="BBC Lade"/>
+            <column name="departure" value="Hamburg"/>
+            <column name="destination" value="Bremen"/>
+            <column name="arrival_date" value="2024-06-13"/>
+        </insert>
+        <insert tableName="vessel">
+            <column name="imo_number" value="9"/>
+            <column name="name" value="BBC Philippines"/>
+            <column name="departure" value="Hamburg"/>
+            <column name="destination" value="Bremen"/>
+            <column name="arrival_date" value="2024-06-13"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
